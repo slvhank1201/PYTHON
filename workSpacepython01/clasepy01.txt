@@ -1,0 +1,118 @@
+# unica regla no escribir ni borrar solo copiar o 
+
+#primer componente | definir variables y inicializar
+#caracteristicas de variable ,tienen que significar lo que almacena o representa, no comenzar con numeros ni caracteres especiales ni espacio
+#1saludo (x)
+#saludo@ (x)
+#saludo amigo (x)
+#saludo (check)
+saludo=input("Ingrese su saludo")
+print(saludo)
+
+
+#variables y tipos de dato
+saludo="Hola como estas "
+edad=0
+nombre="gianmarco"
+print(type(nombre))
+print(saludo+nombre)
+#casteo(cambiar) de un string a int
+nombre=0
+nombreTwo="Juan"
+print(type(nombre))
+print(saludo+nombreTwo)
+#longitud de una cadena
+
+print(len(saludo))
+numero=3
+numero2=str(numero)
+print(type(numero2))
+int(numero)
+print(type(numero))
+
+numeroPI= 3.14
+print('el tipo del numero Pi',type(numeroPI))
+
+
+#OPERACIONES
+numero1=7
+numero2=2
+
+print('la suma es ',numero1+numero2)
+print('la resta es ',numero1-numero2)
+print('division',numero1/numero2)
+print('la division entera',numero1//numero2)
+print('el modulo es ',numero1%numero2)
+
+#determina si un numero es multiplo de 2
+numero3=1231243123
+numeroMultiplo=2 
+isMultiplo=numero3%numeroMultiplo #maximo valor es numeroMultiplo -1 
+# para el caso singular de 2 solo toma 0 , 1 <> el tipo booleano el 0 es False y el 1 es True
+print(isMultiplo)
+
+
+valor1=2
+valor2=5
+print("son iguales",valor1==valor2)
+print("son diferentes",valor1!=valor2)
+
+# Not and or 
+print(not(valor1==valor2))
+print((valor1==valor2)and(valor1+valor2>0))
+print((valor1==valor2)or(valor1+valor2>0))
+
+#None
+x = None  
+print(bool(x))
+print(type(x))
+
+
+nombre = input("Introduce tu nombre: ")
+edad = input("Introduce tu edad")
+print(type(nombre),type(edad))
+
+edadTransformada=int(edad)
+print(type(edadTransformada))
+##### forma en una linea
+nombre = input("Introduce tu nombre: ")
+edad = int(input("Introduce tu edad"))
+print(type(nombre),type(edad))
+
+
+import sys
+print(sys.argv)
+
+c1=3
+c2=7
+suma = c1+c2 # int
+variable1="todos"
+variable2="Lima"
+# Opcion 1
+print("El valor de la suma es " + str(suma)+" y las varaibles son" +str(c1)+"y "+ str(c2)) # str(suma) -> concadenacion solo sirve para strings
+
+# Opcion 2 -> Mejor opcion
+print(f"El valor de la suma es: {suma}") # formatea el numero a texto
+
+# opcion 3 -> Otra buena Opcion
+print("El valor de la suma es: {} y las variables son {} y {}".format(suma,c1,c2))
+
+a=f"hola mundo {variable1} desde la ciudad { variable2}"
+print(a)
+
+
+if True:
+    print("siempre es true")
+
+
+##
+edad=20
+tieneEntrada=False
+if edad>=18:
+    print("ingresa")
+    if tieneEntrada:
+        print( "ingresa tiene entrada")
+    else:
+        print("no ingresa a pesar de ser mayor")
+else:
+    print("no ingresa")
